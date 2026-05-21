@@ -17,3 +17,5 @@ class RecipeViewsTest(TestCase):
         response = self.client.get(reverse('category_detail', args=[self.category.id]))
         self.assertEqual(response.status_code, 200)
         self.assertEqual(response.context['category'], self.category)
+
+        # Не збережений коміт / Автоматизовані тести для перевірки функцій views
